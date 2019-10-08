@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84526B41234728FB006D2FAE /* HelplineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84526B40234728FB006D2FAE /* HelplineVC.swift */; };
+		84526B432347290F006D2FAE /* FAQVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84526B422347290F006D2FAE /* FAQVC.swift */; };
+		845538A82320F77100E9B708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845538A72320F77100E9B708 /* AppDelegate.swift */; };
+		845538AD2320F77100E9B708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845538AB2320F77100E9B708 /* Main.storyboard */; };
+		845538AF2320F77300E9B708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845538AE2320F77300E9B708 /* Assets.xcassets */; };
+		845538B22320F77300E9B708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845538B02320F77300E9B708 /* LaunchScreen.storyboard */; };
+		8481368D233B32DE00BF6FCA /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8481368C233B32DE00BF6FCA /* iOSDropDown.framework */; };
+		848136B3233B7B4D00BF6FCA /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848136B2233B7B4D00BF6FCA /* NavigationViewController.swift */; };
+		84AE17F3233884D300010A85 /* LoadingButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE17F2233884D300010A85 /* LoadingButton1.swift */; };
+		84D7B0F2233271770031DA88 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0E0233271770031DA88 /* QRScannerView.swift */; };
+		84D7B0F3233271770031DA88 /* ParkingHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0E1233271770031DA88 /* ParkingHistoryVC.swift */; };
+		84D7B0F4233271770031DA88 /* QRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0E2233271770031DA88 /* QRCodeVC.swift */; };
+		84D7B0F5233271770031DA88 /* QRCodeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0E3233271770031DA88 /* QRCodeDetailVC.swift */; };
+		84D7B0F6233271770031DA88 /* BalanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0E4233271770031DA88 /* BalanceVC.swift */; };
+		84D7B0F7233271770031DA88 /* LicensePlateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0E5233271770031DA88 /* LicensePlateVC.swift */; };
+		84D7B0F8233271770031DA88 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0E8233271770031DA88 /* StartVC.swift */; };
+		84D7B0F9233271770031DA88 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0E9233271770031DA88 /* ProfileVC.swift */; };
+		84D7B0FA233271770031DA88 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0EA233271770031DA88 /* ForgetPasswordVC.swift */; };
+		84D7B0FB233271770031DA88 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0EB233271770031DA88 /* LoginVC.swift */; };
+		84D7B0FC233271770031DA88 /* UserProfileInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0EC233271770031DA88 /* UserProfileInfoVC.swift */; };
+		84D7B0FD233271770031DA88 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0ED233271770031DA88 /* ChangePasswordVC.swift */; };
+		84D7B0FF233271770031DA88 /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0EF233271770031DA88 /* ResetPasswordVC.swift */; };
+		84D7B100233271770031DA88 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0F0233271770031DA88 /* SignupVC.swift */; };
+		84D7B101233271770031DA88 /* PhoneVerifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B0F1233271770031DA88 /* PhoneVerifyVC.swift */; };
+		84D7B107233272280031DA88 /* AddNewCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B103233272280031DA88 /* AddNewCarVC.swift */; };
+		84D7B108233272280031DA88 /* CarManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B104233272280031DA88 /* CarManagementVC.swift */; };
+		84D7B109233272280031DA88 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B105233272280031DA88 /* PaymentVC.swift */; };
+		84D935F5233315B800DB5453 /* CARTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D935F4233315B800DB5453 /* CARTableViewCell.swift */; };
+		84DA8A1F2334BE5A00EA6C0D /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA8A1E2334BE5A00EA6C0D /* LoadingButton.swift */; };
+		84FC96EF2328CAD500996F1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84FC96EE2328CAD500996F1B /* GoogleService-Info.plist */; };
+		84FC96F12328CD5200996F1B /* Cardata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96F02328CD5200996F1B /* Cardata.swift */; };
+		E708D8411FB7205B366C2C2C /* Pods_CarParkingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9E8FCF338AB0FAF116225D /* Pods_CarParkingDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3733F6BB8EFFD9CFC4184EB8 /* Pods-CarParkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarParkingDemo.debug.xcconfig"; path = "Target Support Files/Pods-CarParkingDemo/Pods-CarParkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		84526B40234728FB006D2FAE /* HelplineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelplineVC.swift; sourceTree = "<group>"; };
+		84526B422347290F006D2FAE /* FAQVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQVC.swift; sourceTree = "<group>"; };
+		84526B5F23475075006D2FAE /* CarParkingDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarParkingDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		845538A42320F77100E9B708 /* CarParkingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarParkingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845538A72320F77100E9B708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		845538AC2320F77100E9B708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		845538AE2320F77300E9B708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845538B12320F77300E9B708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		845538B32320F77300E9B708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8481368C233B32DE00BF6FCA /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848136B2233B7B4D00BF6FCA /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		84AE17F2233884D300010A85 /* LoadingButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton1.swift; sourceTree = "<group>"; };
+		84CD0552232226DE00C81C9D /* CarParkingDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarParkingDemo.entitlements; sourceTree = "<group>"; };
+		84D7B0E0233271770031DA88 /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		84D7B0E1233271770031DA88 /* ParkingHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingHistoryVC.swift; sourceTree = "<group>"; };
+		84D7B0E2233271770031DA88 /* QRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeVC.swift; sourceTree = "<group>"; };
+		84D7B0E3233271770031DA88 /* QRCodeDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeDetailVC.swift; sourceTree = "<group>"; };
+		84D7B0E4233271770031DA88 /* BalanceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceVC.swift; sourceTree = "<group>"; };
+		84D7B0E5233271770031DA88 /* LicensePlateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensePlateVC.swift; sourceTree = "<group>"; };
+		84D7B0E8233271770031DA88 /* StartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		84D7B0E9233271770031DA88 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		84D7B0EA233271770031DA88 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		84D7B0EB233271770031DA88 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		84D7B0EC233271770031DA88 /* UserProfileInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileInfoVC.swift; sourceTree = "<group>"; };
+		84D7B0ED233271770031DA88 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		84D7B0EF233271770031DA88 /* ResetPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
+		84D7B0F0233271770031DA88 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		84D7B0F1233271770031DA88 /* PhoneVerifyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneVerifyVC.swift; sourceTree = "<group>"; };
+		84D7B103233272280031DA88 /* AddNewCarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCarVC.swift; sourceTree = "<group>"; };
+		84D7B104233272280031DA88 /* CarManagementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarManagementVC.swift; sourceTree = "<group>"; };
+		84D7B105233272280031DA88 /* PaymentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		84D935F4233315B800DB5453 /* CARTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARTableViewCell.swift; sourceTree = "<group>"; };
+		84DA8A1E2334BE5A00EA6C0D /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		84FC96EE2328CAD500996F1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84FC96F02328CD5200996F1B /* Cardata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardata.swift; sourceTree = "<group>"; };
+		9043CBC8F9B25E1999E09790 /* Pods-CarParkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarParkingDemo.release.xcconfig"; path = "Target Support Files/Pods-CarParkingDemo/Pods-CarParkingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BC9E8FCF338AB0FAF116225D /* Pods_CarParkingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarParkingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845538A12320F77100E9B708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8481368D233B32DE00BF6FCA /* iOSDropDown.framework in Frameworks */,
+				E708D8411FB7205B366C2C2C /* Pods_CarParkingDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17C547E49BF4D25470A7EC28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8481368C233B32DE00BF6FCA /* iOSDropDown.framework */,
+				BC9E8FCF338AB0FAF116225D /* Pods_CarParkingDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8348588A79A36B1BA0158DC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3733F6BB8EFFD9CFC4184EB8 /* Pods-CarParkingDemo.debug.xcconfig */,
+				9043CBC8F9B25E1999E09790 /* Pods-CarParkingDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84526B3F23472561006D2FAE /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84DA8A1E2334BE5A00EA6C0D /* LoadingButton.swift */,
+				84AE17F2233884D300010A85 /* LoadingButton1.swift */,
+				84FC96F02328CD5200996F1B /* Cardata.swift */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		8455389B2320F77100E9B708 = {
+			isa = PBXGroup;
+			children = (
+				845538A62320F77100E9B708 /* CarParkingDemo */,
+				845538A52320F77100E9B708 /* Products */,
+				8348588A79A36B1BA0158DC4 /* Pods */,
+				17C547E49BF4D25470A7EC28 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		845538A52320F77100E9B708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845538A42320F77100E9B708 /* CarParkingDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845538A62320F77100E9B708 /* CarParkingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84526B3F23472561006D2FAE /* Custom Classes */,
+				84D7B102233272280031DA88 /* Dashboard Flow */,
+				84D7B0E7233271770031DA88 /* Login Signup Flow */,
+				84D7B0DF233271770031DA88 /* QRCode Scanner Flow */,
+				84CD0552232226DE00C81C9D /* CarParkingDemo.entitlements */,
+				845538A72320F77100E9B708 /* AppDelegate.swift */,
+				845538B02320F77300E9B708 /* LaunchScreen.storyboard */,
+				845538AB2320F77100E9B708 /* Main.storyboard */,
+				845538AE2320F77300E9B708 /* Assets.xcassets */,
+				845538B32320F77300E9B708 /* Info.plist */,
+				84FC96EE2328CAD500996F1B /* GoogleService-Info.plist */,
+				84526B5F23475075006D2FAE /* CarParkingDemo-Bridging-Header.h */,
+			);
+			path = CarParkingDemo;
+			sourceTree = "<group>";
+		};
+		84D7B0DF233271770031DA88 /* QRCode Scanner Flow */ = {
+			isa = PBXGroup;
+			children = (
+				84D7B0E0233271770031DA88 /* QRScannerView.swift */,
+				84D7B0E1233271770031DA88 /* ParkingHistoryVC.swift */,
+				84D7B0E2233271770031DA88 /* QRCodeVC.swift */,
+				84D7B0E3233271770031DA88 /* QRCodeDetailVC.swift */,
+				84D7B0E4233271770031DA88 /* BalanceVC.swift */,
+				84D7B0E5233271770031DA88 /* LicensePlateVC.swift */,
+			);
+			path = "QRCode Scanner Flow";
+			sourceTree = "<group>";
+		};
+		84D7B0E7233271770031DA88 /* Login Signup Flow */ = {
+			isa = PBXGroup;
+			children = (
+				84D7B0E8233271770031DA88 /* StartVC.swift */,
+				84D7B0E9233271770031DA88 /* ProfileVC.swift */,
+				84D7B0EA233271770031DA88 /* ForgetPasswordVC.swift */,
+				84D7B0F1233271770031DA88 /* PhoneVerifyVC.swift */,
+				84D7B0EB233271770031DA88 /* LoginVC.swift */,
+				848136B2233B7B4D00BF6FCA /* NavigationViewController.swift */,
+				84D7B0EC233271770031DA88 /* UserProfileInfoVC.swift */,
+				84D7B0ED233271770031DA88 /* ChangePasswordVC.swift */,
+				84D7B0EF233271770031DA88 /* ResetPasswordVC.swift */,
+				84D7B0F0233271770031DA88 /* SignupVC.swift */,
+				84526B40234728FB006D2FAE /* HelplineVC.swift */,
+				84526B422347290F006D2FAE /* FAQVC.swift */,
+			);
+			path = "Login Signup Flow";
+			sourceTree = "<group>";
+		};
+		84D7B102233272280031DA88 /* Dashboard Flow */ = {
+			isa = PBXGroup;
+			children = (
+				84D7B103233272280031DA88 /* AddNewCarVC.swift */,
+				84D7B104233272280031DA88 /* CarManagementVC.swift */,
+				84D7B105233272280031DA88 /* PaymentVC.swift */,
+				84D935F4233315B800DB5453 /* CARTableViewCell.swift */,
+			);
+			path = "Dashboard Flow";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845538A32320F77100E9B708 /* CarParkingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845538B62320F77300E9B708 /* Build configuration list for PBXNativeTarget "CarParkingDemo" */;
+			buildPhases = (
+				F03BC14BCF8F0AA35E412225 /* [CP] Check Pods Manifest.lock */,
+				845538A02320F77100E9B708 /* Sources */,
+				845538A12320F77100E9B708 /* Frameworks */,
+				845538A22320F77100E9B708 /* Resources */,
+				53491FCA5BBDA8FFC76422D5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarParkingDemo;
+			productName = CarParkingDemo;
+			productReference = 845538A42320F77100E9B708 /* CarParkingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8455389C2320F77100E9B708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					845538A32320F77100E9B708 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8455389F2320F77100E9B708 /* Build configuration list for PBXProject "CarParkingDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8455389B2320F77100E9B708;
+			productRefGroup = 845538A52320F77100E9B708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845538A32320F77100E9B708 /* CarParkingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845538A22320F77100E9B708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845538B22320F77300E9B708 /* LaunchScreen.storyboard in Resources */,
+				845538AF2320F77300E9B708 /* Assets.xcassets in Resources */,
+				84FC96EF2328CAD500996F1B /* GoogleService-Info.plist in Resources */,
+				845538AD2320F77100E9B708 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53491FCA5BBDA8FFC76422D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarParkingDemo/Pods-CarParkingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarParkingDemo/Pods-CarParkingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarParkingDemo/Pods-CarParkingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F03BC14BCF8F0AA35E412225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarParkingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845538A02320F77100E9B708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D7B0F9233271770031DA88 /* ProfileVC.swift in Sources */,
+				84D7B0FA233271770031DA88 /* ForgetPasswordVC.swift in Sources */,
+				84D7B0FB233271770031DA88 /* LoginVC.swift in Sources */,
+				848136B3233B7B4D00BF6FCA /* NavigationViewController.swift in Sources */,
+				84D7B0F6233271770031DA88 /* BalanceVC.swift in Sources */,
+				84D7B107233272280031DA88 /* AddNewCarVC.swift in Sources */,
+				84D7B0F7233271770031DA88 /* LicensePlateVC.swift in Sources */,
+				84D7B0F3233271770031DA88 /* ParkingHistoryVC.swift in Sources */,
+				84D7B0FC233271770031DA88 /* UserProfileInfoVC.swift in Sources */,
+				84D7B0FD233271770031DA88 /* ChangePasswordVC.swift in Sources */,
+				84D7B100233271770031DA88 /* SignupVC.swift in Sources */,
+				84AE17F3233884D300010A85 /* LoadingButton1.swift in Sources */,
+				84FC96F12328CD5200996F1B /* Cardata.swift in Sources */,
+				84D7B101233271770031DA88 /* PhoneVerifyVC.swift in Sources */,
+				84DA8A1F2334BE5A00EA6C0D /* LoadingButton.swift in Sources */,
+				84526B432347290F006D2FAE /* FAQVC.swift in Sources */,
+				84D935F5233315B800DB5453 /* CARTableViewCell.swift in Sources */,
+				84D7B0F4233271770031DA88 /* QRCodeVC.swift in Sources */,
+				84D7B0F5233271770031DA88 /* QRCodeDetailVC.swift in Sources */,
+				84D7B0F2233271770031DA88 /* QRScannerView.swift in Sources */,
+				845538A82320F77100E9B708 /* AppDelegate.swift in Sources */,
+				84D7B108233272280031DA88 /* CarManagementVC.swift in Sources */,
+				84D7B0F8233271770031DA88 /* StartVC.swift in Sources */,
+				84D7B109233272280031DA88 /* PaymentVC.swift in Sources */,
+				84D7B0FF233271770031DA88 /* ResetPasswordVC.swift in Sources */,
+				84526B41234728FB006D2FAE /* HelplineVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		845538AB2320F77100E9B708 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845538AC2320F77100E9B708 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		845538B02320F77300E9B708 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845538B12320F77300E9B708 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		845538B42320F77300E9B708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		845538B52320F77300E9B708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845538B72320F77300E9B708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3733F6BB8EFFD9CFC4184EB8 /* Pods-CarParkingDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3592ZDRY4;
+				INFOPLIST_FILE = CarParkingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarParkingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarParkingDemo/CarParkingDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		845538B82320F77300E9B708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9043CBC8F9B25E1999E09790 /* Pods-CarParkingDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3592ZDRY4;
+				INFOPLIST_FILE = CarParkingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CarParkingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarParkingDemo/CarParkingDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8455389F2320F77100E9B708 /* Build configuration list for PBXProject "CarParkingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845538B42320F77300E9B708 /* Debug */,
+				845538B52320F77300E9B708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845538B62320F77300E9B708 /* Build configuration list for PBXNativeTarget "CarParkingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845538B72320F77300E9B708 /* Debug */,
+				845538B82320F77300E9B708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8455389C2320F77100E9B708 /* Project object */;
+}
