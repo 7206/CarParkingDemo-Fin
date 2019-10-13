@@ -23,6 +23,23 @@ class CarDetails {
         self.engionno = engionno
         self.carname = carname
         self.imageurl = imageurl
-        
     }
 }
+class CarD {
+    
+    
+    var serialno: String?
+    var engionno: String?
+    var carname: String?
+    var image:UIImage
+    
+    init(serialno: String?, engionno: String?, carname: String?,image: UIImage){
+        
+        
+        self.serialno = serialno
+        self.engionno = engionno
+        self.carname = carname
+        self.image = image
+    }
+}
+

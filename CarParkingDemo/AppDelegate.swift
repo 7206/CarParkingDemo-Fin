@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import IQKeyboardManagerSwift
+import Braintree
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,8 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
         
-        PayPalMobile .initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction:"Af7sHlGfFS82WjYn-3JdMFiVfPvauh8GKVAphsrkpZI_bWnACjlKFq2ANq9ICmjUTKshWSutccPSDLHI",
-                                                                PayPalEnvironmentSandbox: "sb-sszsh328298@business.example.com"])
+        BTAppSwitch.setReturnURLScheme("com.CarParkingDemo.payments")
         return true
     }
 
@@ -54,10 +54,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     //MARK: - Activity Indicator -
-  
-
-
 }
+func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+    if url.scheme?.localizedCaseInsensitiveCompare("com.CarParkingDemo.payments") == .orderedSame {
+        return BTAppSwitch.handleOpen(url, sourceApplication: sourceApplication)
+    }
+    return false
+}
+
 
 extension UITextField {
     func setLeftPaddingPoints(_ amount:CGFloat){

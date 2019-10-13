@@ -21,14 +21,14 @@ class QRCodeVC: UIViewController {
     }
     @IBOutlet weak var scanButton: UIButton! {
         didSet {
-            scanButton.setTitle("STOP", for: .normal)
+            scanButton.setTitle("", for: .normal)
         }
     }
     
     var qrData: QRData? = nil {
         didSet {
             if qrData != nil {
-                self.performSegue(withIdentifier: "QRCodeDetailVC", sender: self)
+                self.performSegue(withIdentifier: "detailSeuge", sender: self)
             }
         }
     }
@@ -53,12 +53,13 @@ class QRCodeVC: UIViewController {
         }
     }
     @IBAction func back(_ sender: UIButton) {
+        showloader = true
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func scanButtonAction(_ sender: UIButton) {
         scannerView.isRunning ? scannerView.stopScanning() : scannerView.startScanning()
-        let buttonTitle = scannerView.isRunning ? "STOP" : "SCAN"
+        let buttonTitle = scannerView.isRunning ? "" : ""
         sender.setTitle(buttonTitle, for: .normal)
     }
 }
@@ -66,7 +67,7 @@ class QRCodeVC: UIViewController {
 
 extension QRCodeVC: QRScannerViewDelegate {
     func qrScanningDidStop() {
-        let buttonTitle = scannerView.isRunning ? "STOP" : "SCAN"
+        let buttonTitle = scannerView.isRunning ? "" : ""
         scanButton.setTitle(buttonTitle, for: .normal)
     }
     

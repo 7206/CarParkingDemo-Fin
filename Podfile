@@ -14,7 +14,10 @@ target 'CarParkingDemo' do
 	pod 'IQKeyboardManagerSwift'
 	pod 'iOSDropDown'
 	pod ‘PayPal-iOS-SDK’
-
+	pod 'BraintreeDropIn'
+	pod 'Braintree'
+	pod 'ADCountryPicker'
+	  pod 'CountryPickerView'
 
   use_frameworks!
 

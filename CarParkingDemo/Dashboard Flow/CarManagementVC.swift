@@ -11,9 +11,12 @@ import Firebase
 import SDWebImage
 // MARK:-----------Variables--------------
 
-var newCarStatus = true
-var updateCarStatus = false
+//var newCarStatus = true
+//var updateCarStatus = false
 
+struct card{
+    var serial : String
+}
 class CarManagementVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
    
     var carlist = [CarDetails]()
@@ -72,6 +75,28 @@ class CarManagementVC: UIViewController,UITableViewDataSource,UITableViewDelegat
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+     func tableView(_ tableview: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cardetail = self.storyboard?.instantiateViewController(withIdentifier:"CarDetailsVC") as! CarDetailsVC
+        
+        let user: CarDetails
+        user = self.carlist[indexPath.row]
+        
+        cardetail.serialno = user.serialno
+        cardetail.engionno = user.engionno
+        cardetail.carname = user.carname
+        
+        if let url = URL(string: user.imageurl){
+            do {
+                let data = try Data(contentsOf: url)
+                cardetail.carimages = UIImage(data: data)
+                
+            }catch let err {
+                print(" Error : \(err.localizedDescription)")
+            }
+        }
+        
+        self.navigationController?.pushViewController(cardetail, animated: true)
+    }
    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -83,6 +108,8 @@ class CarManagementVC: UIViewController,UITableViewDataSource,UITableViewDelegat
         cell.carcode.text = user.serialno
         cell.carengion.text = user.engionno
         cell.carname.text = user.carname
+        
+        
         if let url = URL(string: user.imageurl){
             
 //            cell.Images.sd_addActivityIndicator()
@@ -97,6 +124,7 @@ class CarManagementVC: UIViewController,UITableViewDataSource,UITableViewDelegat
 
         return cell
     }
+    
     func activityIndicator() {
         indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
         indicator.style = UIActivityIndicatorView.Style.gray
@@ -194,5 +222,6 @@ class CarManagementVC: UIViewController,UITableViewDataSource,UITableViewDelegat
         
             }
         })}
+
 }
 

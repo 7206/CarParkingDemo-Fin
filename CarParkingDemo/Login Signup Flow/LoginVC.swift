@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import iOSDropDown
 class LoginVC: UIViewController {
 
     @IBOutlet weak var backbtnoutlet: UIButton!
@@ -31,8 +30,7 @@ class LoginVC: UIViewController {
         backbtnoutlet.contentVerticalAlignment = .fill
         backbtnoutlet.contentHorizontalAlignment = .fill
         backbtnoutlet.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-       // Dropdown.setLeftPaddingPoints(6)
-        // Dropdown.optionArray = ["+1", "+2", "+3"]
+       
         
     }
     
@@ -46,7 +44,6 @@ class LoginVC: UIViewController {
     }
     @IBAction func loginbtn(_ sender: UIButton) {
         loginbtn()
-       
     }
     override func viewDidDisappear(_ animated: Bool) {
       // loginBtnOutlet.hideLoading()

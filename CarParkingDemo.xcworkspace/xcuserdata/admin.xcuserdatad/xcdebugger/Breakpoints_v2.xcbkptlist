@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/CarManagementVC.swift"
-            timestampString = "591029709.8805031"
+            timestampString = "592629821.1192909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "CarManagementVC"
             landmarkType = "3">
             <Locations>
@@ -103,27 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Login Signup Flow/LoginVC.swift"
-            timestampString = "591028017.908601"
+            timestampString = "592629821.119386"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "forgotpassword(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CarParkingDemo/Login Signup Flow/LoginVC.swift"
-            timestampString = "591028017.9086829"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "LoginVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -135,11 +119,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Login Signup Flow/LoginVC.swift"
-            timestampString = "591028017.908746"
+            timestampString = "592629821.119457"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "userProfileBtn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarParkingDemo/Login Signup Flow/LoginVC.swift"
+            timestampString = "592629821.119522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "loginbtn()"
             landmarkType = "7">
          </BreakpointContent>
@@ -151,11 +151,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Login Signup Flow/LoginVC.swift"
-            timestampString = "591028017.908811"
+            timestampString = "592629821.1195821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "loginbtn()"
             landmarkType = "7">
          </BreakpointContent>
@@ -167,7 +167,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/AddNewCarVC.swift"
-            timestampString = "591029709.880703"
+            timestampString = "592462430.774936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "120"
@@ -183,7 +183,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/AddNewCarVC.swift"
-            timestampString = "591029709.880775"
+            timestampString = "592462430.775058"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
@@ -198,13 +198,13 @@
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.URL&gt;) -&gt; () in CarParkingDemo.AddNewCarVC.savefirebasedata() -&gt; ()"
                   moduleName = "CarParkingDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Documents/CarParkingDemo/CarParkingDemo/Dashboard%20Flow/AddNewCarVC.swift"
-                  timestampString = "591866348.9637001"
+                  urlString = "file:///Users/admin/Documents/CarParkingDemo%20Fin%202/CarParkingDemo/Dashboard%20Flow/AddNewCarVC.swift"
+                  timestampString = "592489300.890041"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "118"
                   endingLineNumber = "118"
-                  offsetFromSymbolStart = "114">
+                  offsetFromSymbolStart = "128">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -213,13 +213,13 @@
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.URL&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Foundation.URL&gt;) -&gt; () in CarParkingDemo.AddNewCarVC.savefirebasedata() -&gt; ()"
                   moduleName = "CarParkingDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Documents/CarParkingDemo/CarParkingDemo/Dashboard%20Flow/AddNewCarVC.swift"
-                  timestampString = "591866348.9671299"
+                  urlString = "file:///Users/admin/Documents/CarParkingDemo%20Fin%202/CarParkingDemo/Dashboard%20Flow/AddNewCarVC.swift"
+                  timestampString = "592489300.893019"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "119"
                   endingLineNumber = "119"
-                  offsetFromSymbolStart = "95">
+                  offsetFromSymbolStart = "108">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -231,7 +231,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/AddNewCarVC.swift"
-            timestampString = "591029709.880836"
+            timestampString = "592462430.7752219"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -247,7 +247,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/AddNewCarVC.swift"
-            timestampString = "591029709.880897"
+            timestampString = "592462430.77539"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -263,7 +263,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/AddNewCarVC.swift"
-            timestampString = "591029709.880954"
+            timestampString = "592462430.775501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "190"
@@ -279,7 +279,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/AddNewCarVC.swift"
-            timestampString = "591029709.8810101"
+            timestampString = "592462430.7756521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "199"
@@ -295,7 +295,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/AddNewCarVC.swift"
-            timestampString = "591029709.881068"
+            timestampString = "592462430.775772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -307,15 +307,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarParkingDemo/Dashboard Flow/CarManagementVC.swift"
-            timestampString = "591029709.881128"
+            timestampString = "592629821.119815"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "activityIndicator()"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,6 +350,117 @@
             endingLineNumber = "44"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarParkingDemo/Custom Classes/Cardata.swift"
+            timestampString = "592629821.11993"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "CarDetails"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarParkingDemo/Login Signup Flow/SignupVC.swift"
+            timestampString = "592629821.119996"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "SignupVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarParkingDemo.SignupVC.locale.getter : Foundation.Locale"
+                  moduleName = "CarParkingDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/CarParkingDemo%20Fin%202/CarParkingDemo/Login%20Signup%20Flow/SignupVC.swift"
+                  timestampString = "592386955.076789"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarParkingDemo.SignupVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CarParkingDemo.SignupVC"
+                  moduleName = "CarParkingDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/CarParkingDemo%20Fin%202/CarParkingDemo/Login%20Signup%20Flow/SignupVC.swift"
+                  timestampString = "592386955.080142"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarParkingDemo.SignupVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CarParkingDemo.SignupVC&gt;"
+                  moduleName = "CarParkingDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/CarParkingDemo%20Fin%202/CarParkingDemo/Login%20Signup%20Flow/SignupVC.swift"
+                  timestampString = "592386955.084011"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "238">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CountryPickerView/CountryPickerView/CountryPickerView.swift"
+            timestampString = "592480156.687957"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "Country"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CountryPickerView/CountryPickerView/CountryPickerView.swift"
+            timestampString = "592480156.688033"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "Country"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
