@@ -8,9 +8,11 @@
 //sandbox_v2gsrf62_wf93b3g2kcx7t3wk
 import UIKit
 import PassKit
-import Braintree     
+import Braintree
+import Stripe
+
 class PaymentVC: UIViewController {
-    
+    var paymentSucceeded = false
 var braintreeClient: BTAPIClient!
 
    
@@ -28,26 +30,46 @@ var braintreeClient: BTAPIClient!
         backbtnoutlet.contentHorizontalAlignment = .fill
         backbtnoutlet.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         braintreeClient = BTAPIClient(authorization: "sandbox_jytpjsfm_wf93b3g2kcx7t3wk")
-        
+       
+    
     }
-    
-    
     @IBAction func applepaybtn(_ sender: UIButton) {
        // applePayController?.delegate = self
-        let request = PKPaymentRequest()
-        request.merchantIdentifier = "merchant.com.example.stripeDemo"
-        request.supportedNetworks = [PKPaymentNetwork.visa, PKPaymentNetwork.masterCard, PKPaymentNetwork.amex]
-        request.merchantCapabilities = PKMerchantCapability.capability3DS
-        request.countryCode = "US"
-        request.currencyCode = "USD"
+        func handleApplePayButtonTapped() {
+            let merchantIdentifier = "merchant.com.example.stripeDemo"
+            let paymentRequest = Stripe.paymentRequest(withMerchantIdentifier: merchantIdentifier, country: "US", currency: "USD")
+            
+            // Configure the line items on the payment request
+            paymentRequest.paymentSummaryItems = [
+                PKPaymentSummaryItem(label: "Fancy Hat", amount: 50.00),
+                // The final line should represent your company;
+                // it'll be prepended with the word "Pay" (i.e. "Pay iHats, Inc $50")
+                PKPaymentSummaryItem(label: "iHats, Inc", amount: 50.00),
+            ]
+            if Stripe.canSubmitPaymentRequest(paymentRequest),
+                let paymentAuthorizationViewController = PKPaymentAuthorizationViewController(paymentRequest: paymentRequest) {
+                paymentAuthorizationViewController.delegate = self
+                present(paymentAuthorizationViewController, animated: true)
+            } else {
+                // There is a problem with your Apple Pay configuration
+            }
+            // ...continued in next step
+        }
         
-        request.paymentSummaryItems = [
-            PKPaymentSummaryItem(label: "Some Product", amount: 9.99)
-        ]
-        
-        let applePayController = PKPaymentAuthorizationViewController(paymentRequest: request)
-        self.present(applePayController!, animated: true, completion: nil)
-        applePayController?.delegate = self
+//        let request = PKPaymentRequest()
+//        request.merchantIdentifier = "merchant.com.example.stripeDemo"
+//        request.supportedNetworks = [PKPaymentNetwork.visa, PKPaymentNetwork.masterCard, PKPaymentNetwork.amex]
+//        request.merchantCapabilities = PKMerchantCapability.capability3DS
+//        request.countryCode = "US"
+//        request.currencyCode = "USD"
+//
+//        request.paymentSummaryItems = [
+//            PKPaymentSummaryItem(label: "Some Product", amount: 9.99)
+//        ]
+//
+//        let applePayController = PKPaymentAuthorizationViewController(paymentRequest: request)
+//        self.present(applePayController!, animated: true, completion: nil)
+//        applePayController?.delegate = self
     }
     
     @IBAction func paypalbtn(_ sender: Any) {
@@ -92,13 +114,52 @@ var braintreeClient: BTAPIClient!
    
 
 
-extension PaymentVC:
-PKPaymentAuthorizationViewControllerDelegate{
-    func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
-        controller.dismiss(animated: true, completion: nil)
+extension PaymentVC: PKPaymentAuthorizationViewControllerDelegate, STPAuthenticationContext {
+    func authenticationPresentingViewController() -> UIViewController {
+        return self
     }
-    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
-        completion(PKPaymentAuthorizationResult(status: PKPaymentAuthorizationStatus.success, errors: []))
+    
+    @available(iOS 11.0, *)
+    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler: @escaping (PKPaymentAuthorizationResult) -> Void) {
+        // Convert the PKPayment into a PaymentMethod
+        STPAPIClient.shared().createPaymentMethod(with: payment) { (paymentMethod: STPPaymentMethod?, error: Error?) in
+            guard let paymentMethod = paymentMethod, error == nil else {
+                // Present error to customer...
+                return
+            }
+            let clientSecret = "sk_test_GakPH3pf3ALEGLEAiz51PMcA00QQUBB1LS"
+            let paymentIntentParams = STPPaymentIntentParams(clientSecret: clientSecret)
+            paymentIntentParams.paymentMethodId = paymentMethod.stripeId
+            
+            // Confirm the PaymentIntent with the payment method
+            STPPaymentHandler.shared().confirmPayment(withParams: paymentIntentParams, authenticationContext: self) { (status, paymentIntent, error) in
+                switch (status) {
+                case .succeeded:
+                    // Save payment success
+                    self.paymentSucceeded = true
+                    handler(PKPaymentAuthorizationResult(status: .success, errors: nil))
+                case .canceled:
+                    handler(PKPaymentAuthorizationResult(status: .failure, errors: nil))
+                case .failed:
+                    // Save/handle error
+                    let errors = [STPAPIClient.pkPaymentError(forStripeError: error)].compactMap({ $0 })
+                    handler(PKPaymentAuthorizationResult(status: .failure, errors: errors))
+                @unknown default:
+                    handler(PKPaymentAuthorizationResult(status: .failure, errors: nil))
+                }
+            }
+        }
+    }
+    
+    func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
+        // Dismiss payment authorization view controller
+        dismiss(animated: true, completion: {
+            if (self.paymentSucceeded) {
+                // Show a receipt page...
+            } else {
+                // Present error to customer...
+            }
+        })
     }
 }
 

@@ -16,8 +16,9 @@ target 'CarParkingDemo' do
 	pod ‘PayPal-iOS-SDK’
 	pod 'BraintreeDropIn'
 	pod 'Braintree'
-	pod 'ADCountryPicker'
-	  pod 'CountryPickerView'
+	pod 'Braintree/Apple-Pay'
+	pod 'CountryPickerView'
+	pod 'Stripe'
 
   use_frameworks!
 

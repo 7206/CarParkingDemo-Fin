@@ -11,6 +11,7 @@ import Firebase
 import FirebaseDatabase
 import IQKeyboardManagerSwift
 import Braintree
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,15 +23,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         // Pass device token to auth
        Auth.auth().setAPNSToken(deviceToken, type: .prod)
-       
+
     }
+ 
+//    func application(_ application: UIApplication,
+//                     didReceiveRemoteNotification notification: [AnyHashable : Any],
+//                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+//        if Auth.auth().canHandleNotification(notification) {
+//            completionHandler(.noData)
+//            return
+//        }
+//        // This notification is not auth related, developer should handle it.
+//        handleNotification(notification)
+//    }
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
         
         BTAppSwitch.setReturnURLScheme("com.CarParkingDemo.payments")
+        Stripe.setDefaultPublishableKey("pk_test_UKxhpD4nBIwmGSSIos2Njpi300aBAXBwov")
         return true
     }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

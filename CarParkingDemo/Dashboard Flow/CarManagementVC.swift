@@ -39,14 +39,17 @@ class CarManagementVC: UIViewController,UITableViewDataSource,UITableViewDelegat
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+       if tableview.visibleCells.isEmpty{
+            
+            self.indicator.hidesWhenStopped = true
+       }else{
         if showloader == false{
         indicator.startAnimating()
         }
         else if showloader == true  {
             self.indicator.stopAnimating()
             self.indicator.hidesWhenStopped = true
-        }
+        }}
     }
     override func viewDidAppear(_ animated: Bool) {
         print("f")

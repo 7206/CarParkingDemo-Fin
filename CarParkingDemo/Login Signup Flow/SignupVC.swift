@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import CountryPickerView
 
+
 class SignupVC: UIViewController,UITextFieldDelegate,CountryPickerViewDelegate, CountryPickerViewDataSource  {
     func countryPickerView(_ countryPickerView: CountryPickerView, didSelectCountry country: Country) {
         countrylbl.text = countryPickerView.selectedCountry.phoneCode
@@ -26,6 +27,44 @@ let countryPickerView = CountryPickerView()
     }
     
  
+    @IBAction func verify(_ sender: Any) {
+        guard let otp = self.verificationotp.text else {return}
+        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") else {return}
+        let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID,verificationCode: otp)
+        
+        Auth.auth().signIn(with: credential) { (sucess, error) in
+            if  error == nil {
+                print(sucess)
+                print("user is signed")
+                
+            }
+            else {
+                print("something went wrong\(error?.localizedDescription)" )
+            }
+        }
+    }
+    @IBAction func newbtn(_ sender: Any) {
+         Auth.auth().languageCode = "en";
+        guard let phonenumber = self.phoneno.text else {return}
+//        let alert = UIAlertController(title: "Phone number", message: "Is this your phone number? \n \(phoneno.text!)", preferredStyle: .alert)
+//        let action = UIAlertAction(title: "Yes", style: .default) { (UIAlertAction) in
+            PhoneAuthProvider.provider().verifyPhoneNumber(phonenumber, uiDelegate: nil) { (verificationID, error) in
+                if error == nil {
+                    print(verificationID)
+                   // guard let verifyid = verificationID else {return}
+                    UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+                    //UserDefaults.synchronize()
+                }
+                else {
+                    print("unable to get secret key",error?.localizedDescription)
+                }
+            }
+//
+//        let cancel = UIAlertAction(title: "No", style: .cancel, handler: nil)
+//        alert.addAction(action)
+//        alert.addAction(cancel)
+//        self.present(alert, animated: true, completion: nil)
+    }
     @IBOutlet weak var dropdownoutlet: UIButton!
     @IBOutlet weak var countrylbl: UILabel!
     @IBOutlet weak var backbtnoulet: UIButton!
@@ -86,8 +125,9 @@ let countryPickerView = CountryPickerView()
         
         if self.RagistationValidation()
         {
+
             self.signupbtnoutlet.showLoading()
-            print("++++++++++++++++success)")
+        
         Auth.auth().createUser(withEmail: username.text!, password: password.text!) { (user, error) in
             
             if error == nil {
@@ -157,10 +197,10 @@ let countryPickerView = CountryPickerView()
     self.displayAlertMessage(messageToDisplay: "Enter phone no.")
         return false
     }
-    else if (verificationotp.text!.count == 0){
-    self.displayAlertMessage(messageToDisplay: "Please enter otp")
-        return false
-    }
+//    else if (verificationotp.text!.count == 0){
+//    self.displayAlertMessage(messageToDisplay: "Please enter otp")
+//        return false
+//    }
     else if password.text  == "" {
     self.displayAlertMessage(messageToDisplay: "Please enter password")
         return false
@@ -176,7 +216,7 @@ let countryPickerView = CountryPickerView()
     self.displayAlertMessage(messageToDisplay: "Please enter valid mobile no.")
         return false
     }
-    else if(verificationotp.text!.count < 7)
+    else if(verificationotp.text!.count < 6)
     {
     self.displayAlertMessage(messageToDisplay: "Otp must be of 7 numbers")
         return false
@@ -198,7 +238,7 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
     guard CharacterSet(charactersIn: "0123456789").isSuperset(of: CharacterSet(charactersIn: string)) else {
         return false
     }
-    let maxLength = 7
+    let maxLength = 6
     let currentString: NSString = verificationotp?.text as! NSString
     let newString: NSString =
         currentString.replacingCharacters(in: range, with: string) as NSString
